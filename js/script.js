@@ -1,5 +1,3 @@
-import { Z_ASCII } from "zlib";
-
 window.onload = function(){
     //some variables 
     var r, g, b, gray;
@@ -40,7 +38,7 @@ window.onload = function(){
         //blackish = dense characters like "W", "@"
         //whitish = light characters like "`", "." 
         if(gray > 250) {
-            characer = "";//almost white 
+            characer = " ";//almost white 
         } else if (gray > 230) {
             character = "`";
         } else if (gray > 200) {
@@ -80,7 +78,7 @@ window.onload = function(){
     var frames = 10; //sprite got 10 frames 
     var container = document.getElementById("container");
     //width of container should allow only 1 frame to be seen 
-    var frame_width = parseInt(window.getComputedStyle(container).width/frames);
+    var frame_width = parseInt(window.getComputedStyle(container).width)/frames;
     //window.getComputedStyle is supported in Chrome, FF, Opera, and IE9+ 
     //The width has "px" at the end so parseInt is used to remove that 
     container.style.width = frame_width + "px";
@@ -88,7 +86,7 @@ window.onload = function(){
     //We will change the margin-left of ascii to move it. 
     ascii.style.marginLeft = "0";
 
-    this.setInterval(loop, 1000/10);
+    setInterval(loop, 1000/10);
 
     function loop(){
         var current_ml = parseFloat(ascii.style.marginLeft);
