@@ -1,11 +1,13 @@
 # Ascii Animation 
-The CodePlayer Cool Ascii Animation using Image Sprite, Canvas, and JavaScript project.
+Ascii Animation using Image Sprite, Canvas, and JavaScript
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
 
 ## Instructions
-Clone this repo or download the zip file. Open index.html file in your browser.
-
-## Contributions
-This code is based on starter code from TheCodePlayer.com. Therefore I will not be accepting pull requests. 
+Clone this repo or download the zip file. The original project would show an image in AScii animation. The project won't work in the browser, but you can use the code as a reference to create your own Ascii animation effect in your projects.
 
 ## Acknowledgements 
 * TheCodePlayer.com
